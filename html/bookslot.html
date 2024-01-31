@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slots</title>
+    <link rel="stylesheet" href="/css/bookslot.css" />
+  </head>
+  <body>
+    <h2>Book a Slot</h2>
+    <nav class="navbar">
+      <a href="/html/home.html">Home</a>
+      <a href="/html/aboutus.html">Go to About Us</a>
+      <a href="/html/slot.html">View Slots</a>
+      <!-- <a href="#">View Parking</a>
+        <a href="#">Book Parking</a> -->
+    </nav>
+
+    <form class="form-containe">
+      <label for="selectDate">Select Date:</label>
+      <input type="date" id="selectDate" name="selectDate" />
+      <label for="startTime">Select Start Time:</label>
+      <input type="time" id="startTime" name="startTime" />
+      <label for="selectHour">Select Hour:</label>
+      <select id="selectHour" name="selectHour">
+        <option value="1">1 Hrs</option>
+        <option value="2">2 Hrs</option>
+        <option value="3">3 Hrs</option>
+        <option value="4">4 Hrs</option>
+        <option value="5">5 Hrs</option>
+        <option value="6">6 Hrs</option>
+        <option value="7">7 Hrs</option>
+        <option value="8">8 Hrs</option>
+        <option value="9">9 Hrs</option>
+        <option value="10">10 Hrs</option>
+        <option value="11">11 Hrs</option>
+        <option value="12">12 Hrs</option>
+      </select>
+      <label for="selectSlots">Select Slot number:</label>
+      <input
+        type="number"
+        id="selectSlots"
+        name="selectSlots"
+        min="1"
+        max="15"
+      />
+      <label for="vehicleType">Choose a vehicle type:</label>
+      <select id="vehicleType" name="vehicleType">
+        <option value="2-wheeler">2-Wheeler</option>
+        <option value="4-wheeler">4-Wheeler</option>
+      </select>
+      <button type="button" id="book_slot_submit">Book Slot</button>
+    </form>
+    <script type="module" src="/js/bookslot.js"></script>
+  </body>
+</html>
